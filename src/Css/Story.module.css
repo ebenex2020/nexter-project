@@ -1,0 +1,9 @@
+/** @format */
+
+.storyPic {
+  background-color: var(--color-primary);
+}
+
+.storyMess {
+  background-color: var(--color-grey-light-1);
+}

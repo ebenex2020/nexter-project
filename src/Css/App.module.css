@@ -1,0 +1,5 @@
+/** @format */
+.app {
+  display: grid;
+  grid-auto-rows: 80vh min-content 40vw repeat(3, min-content);
+}
