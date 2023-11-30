@@ -2,8 +2,10 @@
 
 .storyPic {
   background-color: var(--color-primary);
+  grid-column: full-start / col-end 5;
 }
 
 .storyMess {
   background-color: var(--color-grey-light-1);
+  grid-column: col-start 6 / full-end;
 }

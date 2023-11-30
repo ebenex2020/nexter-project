@@ -8,8 +8,9 @@ import Home from "./component/Home";
 import Footer from "./component/Footer";
 import Realtors from "./component/Realtors";
 import Gallery from "./component/Gallery";
-import Story from "./component/Story";
+import StoryPictures from "./component/StoryPictures";
 import Features from "./component/Features";
+import StoryMessage from "./component/StoryMessage";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
       <Header />
       <Realtors />
       <Features />
-      <Story />
+      <StoryPictures />
+      <StoryMessage />
       <Home />
       <Gallery />
       <Footer />
