@@ -2,10 +2,34 @@
 
 .storyPic {
   background-color: var(--color-primary);
-  grid-column: full-start / col-end 5;
+  grid-column: full-start / col-end 4;
 }
 
 .storyMess {
   background-color: var(--color-grey-light-1);
-  grid-column: col-start 6 / full-end;
+  grid-column: col-start 5 / full-end;
+}
+
+.header,
+.title {
+  font-family: var(--font-display);
+  font-weight: 400;
+}
+
+.header {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.title {
+  font-size: 4rem;
+  font-style: italic;
+  line-height: 1;
+  color: var(--color-grey-dark-1);
+}
+
+.text {
+  font-size: 1.5rem;
+  font-style: italic;
 }

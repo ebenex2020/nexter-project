@@ -8,8 +8,3 @@
     [center-end]
     minmax(6rem, 1fr) [full-end];
 }
-
-.app > * {
-  font-size: 15px;
-  padding: 5rem 0;
-}
