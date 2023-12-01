@@ -15,7 +15,7 @@ function StoryMessage() {
         atque error aut aliquid maiores nemo? Unde fuga dolore quam quae sint
         itaque laboriosam ratione, iste natus! Numquam non temporibus nobis!
       </p>
-      <Btn>find your own home</Btn>
+      <Btn type={"feat"}>find your own home</Btn>
     </section>
   );
 }

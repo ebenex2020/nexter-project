@@ -2,7 +2,9 @@
 
 import styles from "../Css/Btn.module.css";
 
-function Btn({ children }) {
-  return <button className={styles.btn}>{children}</button>;
+function Btn({ children, type }) {
+  return (
+    <button className={`${styles.btn} ${styles[type]}`}>{children}</button>
+  );
 }
 export default Btn;
