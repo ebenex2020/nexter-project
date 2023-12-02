@@ -1,6 +1,21 @@
 /** @format */
 
 .home {
-  background-color: var(--color-secondary);
+  /* background-color: var(--color-secondary); */
   grid-column: center-start / center-end;
+
+  margin: 15rem 0;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 6rem;
+}
+
+.img {
+  width: 100%;
+}
+
+.homeCard {
+  background-color: var(--color-grey-light-1);
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1);
 }
