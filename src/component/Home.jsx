@@ -16,16 +16,22 @@ import img6 from "../img/house-6.jpeg";
 
 import styles from "../Css/Home.module.css";
 
+const style = {
+  color: "#c69963",
+  height: "2rem",
+  width: "2rem",
+};
+
 const cards = [
   {
     name: "Beautiful Familiy House",
     image: img1,
     description: {
-      heart: <FaHeart />,
-      location: <IoLocationOutline />,
-      key: <GoKey />,
-      person: <GoPerson />,
-      map: <FaArrowTrendUp />,
+      heart: <FaHeart style={style} />,
+      location: <IoLocationOutline style={style} />,
+      key: <GoKey style={style} />,
+      person: <GoPerson style={style} />,
+      map: <FaArrowTrendUp style={style} />,
       country: "USA",
       rooms: "5 rooms",
       meter: 325,
@@ -36,11 +42,11 @@ const cards = [
     name: "Modern Glass Villa",
     image: img2,
     description: {
-      heart: <FaHeart />,
-      location: <IoLocationOutline />,
-      key: <GoKey />,
-      person: <GoPerson />,
-      map: <FaArrowTrendUp />,
+      heart: <FaHeart style={style} />,
+      location: <IoLocationOutline style={style} />,
+      key: <GoKey style={style} />,
+      person: <GoPerson style={style} />,
+      map: <FaArrowTrendUp style={style} />,
       country: "Canada",
       rooms: "6 rooms",
       meter: 450,
@@ -51,11 +57,11 @@ const cards = [
     name: "Cozy Country House",
     image: img3,
     description: {
-      heart: <FaHeart />,
-      location: <IoLocationOutline />,
-      key: <GoKey />,
-      person: <GoPerson />,
-      map: <FaArrowTrendUp />,
+      heart: <FaHeart style={style} />,
+      location: <IoLocationOutline style={style} />,
+      key: <GoKey style={style} />,
+      person: <GoPerson style={style} />,
+      map: <FaArrowTrendUp style={style} />,
       country: "NGR",
       rooms: "4 rooms",
       meter: 250,
@@ -66,11 +72,11 @@ const cards = [
     name: "Large Rustical Villa",
     image: img4,
     description: {
-      heart: <FaHeart />,
-      location: <IoLocationOutline />,
-      key: <GoKey />,
-      person: <GoPerson />,
-      map: <FaArrowTrendUp />,
+      heart: <FaHeart style={style} />,
+      location: <IoLocationOutline style={style} />,
+      key: <GoKey style={style} />,
+      person: <GoPerson style={style} />,
+      map: <FaArrowTrendUp style={style} />,
       country: "Portugal",
       rooms: "6 rooms",
       meter: 480,
@@ -81,11 +87,11 @@ const cards = [
     name: "Majestic Palace House",
     image: img5,
     description: {
-      heart: <FaHeart />,
-      location: <IoLocationOutline />,
-      key: <GoKey />,
-      person: <GoPerson />,
-      map: <FaArrowTrendUp />,
+      heart: <FaHeart style={style} />,
+      location: <IoLocationOutline style={style} />,
+      key: <GoKey style={style} />,
+      person: <GoPerson style={style} />,
+      map: <FaArrowTrendUp style={style} />,
       country: "Germany",
       rooms: "18 rooms",
       meter: 4230,
@@ -96,11 +102,11 @@ const cards = [
     name: "Modern Family Appointment",
     image: img6,
     description: {
-      heart: <FaHeart />,
-      location: <IoLocationOutline />,
-      key: <GoKey />,
-      person: <GoPerson />,
-      map: <FaArrowTrendUp />,
+      heart: <FaHeart style={style} />,
+      location: <IoLocationOutline style={style} />,
+      key: <GoKey style={style} />,
+      person: <GoPerson style={style} />,
+      map: <FaArrowTrendUp style={style} />,
       country: "Swaziland",
       rooms: "3 rooms",
       meter: 180,
@@ -111,7 +117,7 @@ const cards = [
 
 const renderedCards = (card) => {
   return (
-    <div className={styles.homeCard}>
+    <div className={styles.homeCard} key={card.name}>
       <img
         src={card.image}
         alt="Modern Houses Pictures"
