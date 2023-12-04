@@ -18,8 +18,8 @@ import styles from "../Css/Home.module.css";
 
 const style = {
   color: "#c69963",
-  height: "2rem",
-  width: "2rem",
+  height: "100%",
+  width: "100%",
 };
 
 const cards = [
@@ -123,27 +123,27 @@ const renderedCards = (card) => {
         alt="Modern Houses Pictures"
         className={styles.img}
       />
-      <div>{card.description.heart}</div>
-      <p>{card.name}</p>
-      <div>
-        <div>
+      <div className={styles.heart}>{card.description.heart}</div>
+      <p className={styles.name}>{card.name}</p>
+      <div className={styles.cardGrid}>
+        <div className={styles.flex}>
           <div>{card.description.location}</div>
           <p>{card.description.country} </p>
         </div>
-        <div>
+        <div className={styles.flex}>
           <div>{card.description.person}</div>
           <p>{card.description.rooms} </p>
         </div>
-        <div>
+        <div className={styles.flex}>
           <div>{card.description.map}</div>
-          <p>{card.description.meter} </p>
+          <p>{card.description.meter}&#13217; </p>
         </div>
-        <div>
+        <div className={styles.flex}>
           <div>{card.description.key}</div>
           <p>${card.description.amount} </p>
         </div>
       </div>
-      <Btn>Contact Realtor</Btn>
+      <Btn type={"home"}>Contact Realtor</Btn>
     </div>
   );
 };

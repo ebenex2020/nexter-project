@@ -15,11 +15,14 @@
   cursor: pointer;
   transition: all 0.2s;
 }
+.btn:hover {
+  background-color: var(--color-primary-dark);
+}
 
 .feat {
   align-self: start;
 }
 
-.btn:hover {
-  background-color: var(--color-primary-dark);
+.home {
+  grid-column: span 2;
 }
