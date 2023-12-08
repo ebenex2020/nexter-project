@@ -3,4 +3,49 @@
 .realtor {
   background-color: var(--color-secondary);
   grid-column: col-start 7 / full-end;
+
+  display: grid;
+  grid-template-columns: min-content;
+  grid-template-rows: min-content;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  row-gap: 2rem;
+}
+
+.realtor h3 {
+  font-size: 1.5rem;
+  font-family: var(--font-display);
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.imageGrid {
+  display: grid;
+  grid-template-columns: min-content max-content;
+  grid-template-rows: repeat(3, min-content);
+  align-items: center;
+  column-gap: 2rem;
+  row-gap: 5vh;
+}
+
+.img {
+  height: 7rem;
+  border-radius: 50%;
+}
+
+.box {
+  color: var(--color-grey-light-1);
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: 1.9rem;
+  font-weight: 400;
+}
+
+.text {
+  font-size: 0.9rem;
+  margin-top: -3px;
 }
